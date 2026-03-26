@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-import { Produto } from '../../App'
+import { Produto } from '../../types'
 
 import cesta from '../../assets/cesta.png'
 import { paraReal } from '../Produto'
@@ -15,7 +15,6 @@ const Header = ({ itensNoCarrinho, favoritos }: Props) => {
     acc += item.preco
     return acc
   }, 0)
-
   return (
     <S.Header>
       <h1>EBAC Sports</h1>
